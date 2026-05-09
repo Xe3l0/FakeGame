@@ -7,72 +7,70 @@
 
 ---
 
-## ⚡ التثبيت خطوة بخطوة
+## ⚡ Installation
 
-### الخطوة 1 — تثبيت .NET SDK
+### Step 1 — Install .NET SDK
 
-التطبيق يحتاج .NET عشان يشتغل، نزّله من هنا:
+FakeExe requires .NET to run. Download it here:
 
-👉 **[تحميل .NET SDK](https://aka.ms/dotnet/download)**
+👉 **[Download .NET SDK](https://aka.ms/dotnet/download)**
 
-اختار **Windows x64** وثبّته، العملية تاخذ دقيقتين.
-
----
-
-### الخطوة 2 — تشغيل المثبّت
-
-بعد ما تحمّل ملفات المشروع:
-
-1. افتح مجلد المشروع
-2. **ضغطتين على `install.bat`**
-3. البرنامج يبني نفسه تلقائياً ويظهر على الـ Desktop
-
-> ✅ ما تحتاج تفتح CMD أو تكتب أي أوامر
+Choose **Windows x64** and install it. Takes about 2 minutes.
 
 ---
 
-## 🛠 كيف تستخدمه
+### Step 2 — Run the Installer
 
-| الحقل | الشرح |
-|-------|-------|
-| **Discord Application ID** | الـ ID من Discord Developer Portal — اتركه افتراضي للاستخدام العادي |
-| **Game Name** | اسم اللعبة اللي تبي تظهر عند أصحابك |
-| **Details** | السطر الأول تحت اسم اللعبة — مثال: `In the main menu` |
-| **State** | السطر الثاني — مثال: `Level 12 \| Ranked Match` |
-| **Large Image Key** | مفتاح صورة اللعبة (اختياري) |
+1. Download the project files
+2. **Double-click `install.bat`**
+3. FakeExe will build itself and appear on your Desktop automatically
 
-بعد ما تملي الحقول، اضغط **▶ Start Presence** وافتح Discord وشوف! 🎮
+> ✅ No CMD, no commands, no hassle.
 
 ---
 
-## ⚠️ ملاحظة مهمة — اسم اللعبة الرئيسي
+## 🛠 How to Use
 
-Discord يعرض **اسم تطبيقك** من Developer Portal كعنوان رئيسي، مو الاسم اللي تكتبه في التطبيق مباشرة.
+| Field | Description |
+|-------|-------------|
+| **Discord Application ID** | Your app ID from Discord Developer Portal — leave default for basic use |
+| **Game Name** | The game name you want to show to your friends |
+| **Details** | First line under the game name — e.g. `In the main menu` |
+| **State** | Second line — e.g. `Level 12 \| Ranked Match` |
+| **Large Image Key** | Image asset key from your Discord app (optional) |
 
-عشان يطلع اسم اللعبة الصح:
-
-1. روح 👉 [discord.com/developers/applications](https://discord.com/developers/applications)
-2. افتح تطبيقك أو أنشئ واحد جديد مجاناً
-3. غير **App Name** لاسم اللعبة اللي تبيها
-4. احفظ وأعد تشغيل FakeExe
-
-> مثال: تبي تظهر تلعب `Minecraft`؟ غير App Name لـ `Minecraft`
+Fill in the fields and hit **▶ Start Presence** — then check Discord! 🎮
 
 ---
 
-## 💾 الإعدادات
+## ⚠️ Important — Game Name Display
 
-التطبيق يحفظ إعداداتك تلقائياً في:
+Discord shows your **application name** from the Developer Portal as the main title, not the name you type in the app.
+
+To show the correct game name:
+
+1. Go to 👉 [discord.com/developers/applications](https://discord.com/developers/applications)
+2. Open your app or create a free one
+3. Change the **App Name** to the game you want to show
+4. Save and restart FakeExe
+
+> Example: Want to appear playing `Minecraft`? Set your App Name to `Minecraft`.
+
+---
+
+## 💾 Settings
+
+FakeExe automatically saves your settings to:
 ```
-C:\Users\[اسمك]\AppData\Roaming\FakeExe\settings.txt
+C:\Users\[YourName]\AppData\Roaming\FakeExe\settings.txt
 ```
-كل ما تفتح التطبيق يرجع كل شي كما تركته ✅
+Everything is restored next time you open the app ✅
 
 ---
 
-## 🔧 بناء المشروع يدوياً
+## 🔧 Build Manually
 
-إذا تبي تبنيه بنفسك:
+If you prefer to build it yourself:
 
 ```bash
 git clone https://github.com/YourUsername/FakeExe
@@ -80,21 +78,21 @@ cd FakeExe
 dotnet publish -c Release
 ```
 
-الـ `.exe` يطلع في:
+The `.exe` will be at:
 ```
 bin\Release\net6.0-windows\win-x64\publish\FakeExe.exe
 ```
 
 ---
 
-## 📋 المتطلبات
+## 📋 Requirements
 
-- Windows 10 أو أحدث
+- Windows 10 or later
 - [.NET 6 SDK](https://aka.ms/dotnet/download)
-- Discord مثبّت وشغّال
+- Discord installed and running
 
 ---
 
 ## 📄 License
 
-MIT — مجاني للاستخدام والتعديل والنشر.
+MIT — free to use, modify, and share.
